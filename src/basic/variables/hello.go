@@ -1,4 +1,4 @@
-package main
+package variables
 
 import (
 	"fmt"
@@ -33,7 +33,7 @@ var (
 
 const MYPICONST = 3.14159
 
-func main()  {
+func variables()  {
 	// fmt.Printf("这是我的第一个测试项目！", add(1, 2))
 	fmt.Printf("%s %d\n", "相加结果", add(1, 2))
 
