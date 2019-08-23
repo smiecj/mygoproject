@@ -2,20 +2,18 @@ package main
 
 import "fmt"
 
-type Student struct {
+type Teacher struct {
 	id int16
 	name string
-	sex string
-	grade int
-	classId int16
+	subject string
 }
 
 func main() {
-	sXiaoMing := Student{1, "xiaoming", "boy", 1, 1}
-	sXiaoMingPointer := &sXiaoMing
-	fmt.Println(sXiaoMing)
-	fmt.Printf("输出小明的信息: %+v\n", sXiaoMing)
-	fmt.Printf("输出小明的姓名: %s\n", sXiaoMing.name)
+	tXiaoMing := Teacher{1, "Mr.Li", "science"}
+	tXiaoMingPointer := &tXiaoMing
+	fmt.Println(tXiaoMing)
+	fmt.Printf("输出老师的信息: %+v\n", tXiaoMing)
+	fmt.Printf("输出老师的姓名: %s\n", tXiaoMing.name)
 	// 指针也可以直接通过.来访问属性
-	fmt.Printf("输出小明的年级: %d\n", sXiaoMingPointer.grade)
+	fmt.Printf("输出老师的课程: %d\n", tXiaoMingPointer.subject)
 }
