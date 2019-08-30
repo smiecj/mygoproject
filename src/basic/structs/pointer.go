@@ -22,4 +22,7 @@ func main() {
 	xiaoming := model.Student{1, "xiaoming", 1}
 	addStudentGrade(&xiaoming)
 	fmt.Printf("学生%s的信息为: %v\n", xiaoming.Name, xiaoming)
+
+	// 测试不同包之间的pointer receiver
+
 }

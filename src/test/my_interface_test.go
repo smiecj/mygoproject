@@ -1,7 +1,7 @@
 package test
 
 import (
-	"basic"
+	"basic/model"
 	"bytes"
 	"fmt"
 	"strconv"
@@ -38,7 +38,7 @@ func TestPrintAddr(t *testing.T) {
 	}
 }
 
-func TestPrintHomeWork(t* testing.T) {
-	w := basic.HomeWork{"computer", "Print Homework Message", "写一个实现了String方法的类，并用printf打印"}
+func TestPrintHomeWork(t *testing.T) {
+	w := model.HomeWork{"computer", "Print Homework Message", "写一个实现了String方法的类，并用printf打印"}
 	fmt.Printf("作业的信息为: %v\n", w)
 }

@@ -24,7 +24,8 @@ func mergeSum(intArr []int, channel chan int) {
 }
 
 func TestGetSumByMerge(t *testing.T) {
-	LEN := 10000
+	// LEN 比较大的时候，可能开启了比较多线程，消耗还是挺大的
+	LEN := 10000000
 	arr := make([]int, LEN + 1)
 	for index := 1; index <= LEN; index++ {
 		arr[index] = index
